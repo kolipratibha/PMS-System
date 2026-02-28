@@ -5,6 +5,13 @@ app_description = "Project Management System"
 app_email = "atrcpit2pk@gmail.com"
 app_license = "mit"
 
+
+app_include_js = [
+    "/assets/pms/js/navbar.js"
+]
+app_include_css = [
+    "/assets/pms/css/custom.css"
+]
 # Apps
 # ------------------
 

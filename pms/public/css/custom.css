@@ -1,0 +1,140 @@
+/* ===== PMS Custom Theme - Light Blue & Blue ===== */
+
+:root {
+    --primary-blue: #1A73E8;
+    --light-blue: #A8D8F0;
+    --dark-blue: #0D47A1;
+    --accent-blue: #42A5F5;
+    --bg-light: #EBF5FB;
+    --sidebar-bg: #F0F8FF;
+    --white: #FFFFFF;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue)) !important;
+    box-shadow: 0 2px 8px rgba(13, 71, 161, 0.3);
+}
+
+/* ---- Logo - show as-is, no color filter ---- */
+.navbar-brand img.app-logo,
+.navbar-home img.app-logo {
+    filter: none !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-height: 40px;
+}
+
+/* ---- Search bar ---- */
+.navbar .form-control,
+.navbar .search-bar input {
+    background: rgba(255,255,255,0.15) !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    color: white !important;
+    border-radius: 20px;
+}
+
+.navbar .form-control::placeholder {
+    color: rgba(255,255,255,0.7) !important;
+}
+
+/* ---- Hide Help Dropdown ---- */
+li.dropdown-help {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* ---- Sidebar ---- */
+.layout-side-section,
+.desk-sidebar {
+    background: var(--sidebar-bg) !important;
+    border-right: 2px solid var(--light-blue) !important;
+}
+
+.desk-sidebar .sidebar-label {
+    color: var(--dark-blue) !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.desk-sidebar .standard-sidebar-item a,
+.desk-sidebar .standard-sidebar-item span {
+    color: var(--primary-blue) !important;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.desk-sidebar .standard-sidebar-item:hover a {
+    background: var(--light-blue) !important;
+    color: var(--dark-blue) !important;
+    padding-left: 12px;
+}
+
+/* ---- Selected sidebar item - text and icon visible ---- */
+.desk-sidebar .standard-sidebar-item.selected a,
+.desk-sidebar .standard-sidebar-item.selected span,
+.desk-sidebar .standard-sidebar-item.selected .sidebar-item-label {
+    background: var(--primary-blue) !important;
+    color: var(--white) !important;
+}
+
+.desk-sidebar .standard-sidebar-item.selected svg,
+.desk-sidebar .standard-sidebar-item.selected .sidebar-item-icon {
+    color: var(--white) !important;
+    stroke: var(--white) !important;
+    fill: var(--white) !important;
+}
+
+/* ---- Main Content Cards ---- */
+.layout-main-section,
+.frappe-card {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.1) !important;
+    border: 1px solid var(--light-blue) !important;
+}
+
+/* ---- Page Title ---- */
+.page-title .title-text,
+h1, .h1 {
+    color: var(--dark-blue) !important;
+    font-weight: 700;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue)) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    box-shadow: 0 3px 8px rgba(26,115,232,0.3) !important;
+    transition: all 0.2s ease !important;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(26,115,232,0.5) !important;
+}
+
+/* ---- Dashboard shortcut widgets ---- */
+.onboarding-step a,
+.widget-link,
+.shortcut-widget-box {
+    color: var(--primary-blue) !important;
+    border: 1px solid var(--light-blue) !important;
+    border-radius: 10px !important;
+    transition: all 0.2s ease;
+}
+
+.shortcut-widget-box:hover {
+    background: var(--bg-light) !important;
+    border-color: var(--primary-blue) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26,115,232,0.2);
+}
+
+/* ---- Home Items section ---- */
+.home-items-container h5,
+.items-header {
+    color: var(--dark-blue) !important;
+    border-bottom: 2px solid var(--light-blue);
+    padding-bottom: 5px;
+}
