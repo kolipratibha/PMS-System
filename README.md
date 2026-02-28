@@ -170,7 +170,7 @@ bench --site mysite.com install-app erpnext
 ## STEP 13 — Install PMS App (from GitHub)
 
 ```bash
-bench get-app https://github.com/YOUR_GITHUB_USERNAME/pms --branch main
+bench get-app https://github.com/kolipratibha/PMS-System --branch main
 bench --site mysite.com install-app pms
 ```
 
